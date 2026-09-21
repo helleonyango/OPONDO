@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OPONDOFITNESS - Premium Gym Equipment & Athletic Wear. Train Harder. Look Better.">
+    <title>OPONDOFITNESS | Gym Equipment & Athletic Wear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="OPONDOFITNESS Home">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>OPONDOFITNESS</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#shop" class="nav-link" data-nav-filter="equipment">Equipment</a></li>
+                    <li><a href="#shop" class="nav-link" data-nav-filter="apparel">Apparel</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartBtn" aria-label="Shopping Cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-background">
+                <img src="images/photo.webp" alt="OPONDOFITNESS athlete in navy blue shirt" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-headline">Train Harder.<br><span class="accent-text">Look Better.</span></h1>
+                <p class="hero-subheadline">Premium gym equipment and athletic wear engineered for those who refuse to settle. Elevate every rep, every set, every session.</p>
+                <div class="hero-actions">
+                    <a href="#shop" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="categories" id="categories" aria-labelledby="categories-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="categories-title" class="section-title">Shop by Category</h2>
+                    <p class="section-subtitle">Find exactly what you need to crush your goals</p>
+                </header>
+                <div class="categories-grid">
+                    <article class="category-card" data-category="strength">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="African athlete strength training" loading="lazy">
+                        </div>
+                        <div class="category-content">
+                            <h3>Strength Equipment</h3>
+                            <p>Racks, benches, weights & more</p>
+                            <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                    
+                    <article class="category-card" data-category="cardio">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=600&q=80" alt="African woman cardio training" loading="lazy">
+                        </div>
+                        <div class="category-content">
+                            <h3>Cardio Machines</h3>
+                            <p>Treadmills, bikes, rowers & more</p>
+                            <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                    
+                    <article class="category-card" data-category="mens">
+                        <div class="category-image">
+                            <img src="https://res.cloudinary.com/ggus-dev/image/private/s--I-rzyU5E--/c_auto,g_auto,w_3598,h_2400/v1/25fcf1e9/blog-how-to-start-going-to-the-gym.webp?_a=BAAAV6DQ" alt="Men's athletic wear" loading="lazy">
+                        </div>
+                        <div class="category-content">
+                            <h3>Men's Wear</h3>
+                            <p>Performance tees, shorts, hoodies</p>
+                            <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                    
+                    <article class="category-card" data-category="womens">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&q=80" alt="African woman athletic wear" loading="lazy">
+                        </div>
+                        <div class="category-content">
+                            <h3>Women's Wear</h3>
+                            <p>Leggings, sports bras, tanks & more</p>
+                            <span class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products" id="shop" aria-labelledby="products-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="products-title" class="section-title">Featured Products</h2>
+                    <p class="section-subtitle">Hand-picked essentials for your training arsenal</p>
+                </header>
+                
+                <div class="filter-tabs" role="tablist" aria-label="Product categories">
+                    <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="equipment">Equipment</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="apparel">Apparel</button>
+                </div>
+                
+                <div class="products-grid" id="productsGrid" role="tabpanel">
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="features-title" class="section-title">Why Choose OPONDOFITNESS</h2>
+                    <p class="section-subtitle">We're committed to your success, every step of the way</p>
+                </header>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-check"></i>
+                        </div>
+                        <h3>Quality Guarantee</h3>
+                        <p>30-day money-back guarantee. If it's not perfect, we'll make it right.</p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Real humans, real answers. Chat, email, or call us anytime.</p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+                        <h3>Easy Returns</h3>
+                        <p>Hassle-free returns within 60 days. No questions asked.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-story" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="images/photo.webp" alt="OPONDOFITNESS athlete training hard" loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <span class="about-eyebrow">Our Story</span>
+                        <h2 id="about-title" class="section-title">Forged in Nairobi.<br><span class="accent-text">Built for the Relentless.</span></h2>
+                        <p>OPONDOFITNESS was born in a small garage gym in Nairobi — out of frustration. We were tired of flimsy imported gear that broke after a few heavy sessions and overpriced athletic wear that couldn't survive a real workout. We knew athletes in Kenya and across Africa deserved better.</p>
+                        <p>So we built it ourselves. What started with a single power rack and a sewing machine has grown into a brand trusted by over 500 athletes. We source, test, and engineer every product — from our <strong>Power Racks and Olympic Barbells</strong> to our <strong>Performance Tees and Training Joggers</strong> — to withstand the hardest training you can throw at it.</p>
+                        <p>We are not for those who want shortcuts. We are for the early risers, the last-rep pushers, the ones who earn every drop of sweat. <strong>Train Harder. Look Better.</strong> isn't just a slogan — it's a promise that every rep, every set, every session counts.</p>
+                        <div class="about-stats">
+                            <div class="stat"><strong>500+</strong><span>Athletes Trust Us</span></div>
+                            <div class="stat"><strong>Nairobi</strong><span>Proudly Kenyan</span></div>
+                            <div class="stat"><strong>30-Day</strong><span>Quality Guarantee</span></div>
+                        </div>
+                        <a href="#shop" class="btn btn-primary about-cta">Shop the Collection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-title" class="section-title">Trusted by Athletes</h2>
+                    <p class="section-subtitle">Real results from real people who train with OPONDOFITNESS</p>
+                </header>
+                
+                <div class="testimonials-carousel" id="testimonialsCarousel" role="region" aria-label="Customer testimonials">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                    </div>
+                    
+                    <button class="carousel-btn carousel-prev" id="prevTestimonial" aria-label="Previous testimonial">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn carousel-next" id="nextTestimonial" aria-label="Next testimonial">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Testimonial navigation"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-content">
+                    <header>
+                        <h2 id="newsletter-title" class="section-title">Join the OPONDOFITNESS Community</h2>
+                        <p class="section-subtitle">Get exclusive drops, training tips, and 15% off your first order</p>
+                    </header>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" aria-describedby="email-error">
+                            <span class="error-message" id="emailError" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <p class="form-note">No spam. Unsubscribe anytime.</p>
+                    </form>
+                    <div class="success-message" id="successMessage" aria-live="polite" hidden>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>You're in! Check your inbox for your 15% discount code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="OPONDOFITNESS Home">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>OPONDOFITNESS</span>
+                    </a>
+                    <p class="footer-tagline">Forged for the relentless. Built for those who earn it.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Quick Links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shop" data-footer-filter="all">Shop All</a></li>
+                        <li><a href="#shop" data-footer-filter="equipment">Equipment</a></li>
+                        <li><a href="#shop" data-footer-filter="apparel">Apparel</a></li>
+                        <li><a href="#features">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <nav class="footer-nav" aria-label="Support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" data-coming-soon="Track Order">Track Order</a></li>
+                        <li><a href="#" data-coming-soon="Returns & Exchanges">Returns & Exchanges</a></li>
+                        <li><a href="#" data-coming-soon="Shipping Info">Shipping Info</a></li>
+                        <li><a href="#" data-coming-soon="FAQs">FAQs</a></li>
+                        <li><a href="#" data-coming-soon="Warranty">Warranty</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+254734125101">+254 734 125 101</a></p>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:ochwedaomola@gmail.com">ochwedaomola@gmail.com</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 OPONDOFITNESS. All rights reserved. Forged with purpose.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cartOverlay" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartDrawerTitle">
+        <div class="cart-drawer-header">
+            <h2 id="cartDrawerTitle">Your Cart (<span id="cartDrawerCount">0</span>)</h2>
+            <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-drawer-body" id="cartDrawerBody"></div>
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+            <button class="btn btn-primary cart-checkout" id="cartCheckout">Checkout</button>
+            <button class="btn btn-secondary cart-clear" id="cartClear">Clear Cart</button>
+        </div>
+    </aside>
+
+    <div class="cart-toast" id="cartToast" role="alert" aria-live="polite" hidden>
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Added to cart!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
